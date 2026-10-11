@@ -1,0 +1,78 @@
+Collecting supabase
+  Downloading supabase-2.32.0-py3-none-any.whl.metadata (4.7 kB)
+Collecting realtime==2.32.0 (from supabase)
+  Downloading realtime-2.32.0-py3-none-any.whl.metadata (9.9 kB)
+Collecting supabase-functions==2.32.0 (from supabase)
+  Downloading supabase_functions-2.32.0-py3-none-any.whl.metadata (2.4 kB)
+Collecting storage3==2.32.0 (from supabase)
+  Downloading storage3-2.32.0-py3-none-any.whl.metadata (2.2 kB)
+Collecting supabase-auth==2.32.0 (from supabase)
+  Downloading supabase_auth-2.32.0-py3-none-any.whl.metadata (6.4 kB)
+Collecting postgrest==2.32.0 (from supabase)
+  Downloading postgrest-2.32.0-py3-none-any.whl.metadata (3.4 kB)
+Requirement already satisfied: httpx<0.29,>=0.26 in d:\telegram bot\ai-job-telegram-bot\venv\lib\site-packages (from supabase) (0.28.1)
+Collecting yarl>=1.22.0 (from supabase)
+  Downloading yarl-1.25.1-cp312-cp312-win_amd64.whl.metadata (115 kB)
+     -------------------------------------- 115.0/115.0 kB 1.1 MB/s eta 0:00:00
+Collecting deprecation>=2.1.0 (from postgrest==2.32.0->supabase)
+  Using cached deprecation-2.1.0-py2.py3-none-any.whl.metadata (4.6 kB)
+Requirement already satisfied: pydantic<3.0,>=1.9 in d:\telegram bot\ai-job-telegram-bot\venv\lib\site-packages (from postgrest==2.32.0->supabase) (2.13.5)
+Requirement already satisfied: typing-extensions>=4.14.0 in d:\telegram bot\ai-job-telegram-bot\venv\lib\site-packages (from realtime==2.32.0->supabase) (4.16.0)
+Collecting websockets<16,>=11 (from realtime==2.32.0->supabase)
+  Using cached websockets-15.0.1-cp312-cp312-win_amd64.whl.metadata (7.0 kB)
+Collecting pyjwt>=2.12.0 (from pyjwt[crypto]>=2.12.0->supabase-auth==2.32.0->supabase)
+  Downloading pyjwt-2.15.1-py3-none-any.whl.metadata (3.5 kB)
+Collecting strenum>=0.4.15 (from supabase-functions==2.32.0->supabase)
+  Using cached StrEnum-0.4.15-py3-none-any.whl.metadata (5.3 kB)
+Requirement already satisfied: anyio in d:\telegram bot\ai-job-telegram-bot\venv\lib\site-packages (from httpx<0.29,>=0.26->supabase) (4.15.1)
+Requirement already satisfied: certifi in d:\telegram bot\ai-job-telegram-bot\venv\lib\site-packages (from httpx<0.29,>=0.26->supabase) (2026.7.22)
+Requirement already satisfied: httpcore==1.* in d:\telegram bot\ai-job-telegram-bot\venv\lib\site-packages (from httpx<0.29,>=0.26->supabase) (1.0.9)
+Requirement already satisfied: idna in d:\telegram bot\ai-job-telegram-bot\venv\lib\site-packages (from httpx<0.29,>=0.26->supabase) (3.19)
+Requirement already satisfied: h11>=0.16 in d:\telegram bot\ai-job-telegram-bot\venv\lib\site-packages (from httpcore==1.*->httpx<0.29,>=0.26->supabase) (0.16.0)
+Collecting multidict>=4.0 (from yarl>=1.22.0->supabase)
+  Downloading multidict-7.0.0-cp312-cp312-win_amd64.whl.metadata (6.3 kB)
+Collecting propcache>=0.2.1 (from yarl>=1.22.0->supabase)
+  Downloading propcache-0.5.4-cp312-cp312-win_amd64.whl.metadata (25 kB)
+Collecting packaging (from deprecation>=2.1.0->postgrest==2.32.0->supabase)
+  Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting h2<5,>=3 (from httpx[http2]<0.29,>=0.26->postgrest==2.32.0->supabase)
+  Downloading h2-4.4.1-py3-none-any.whl.metadata (3.8 kB)
+Requirement already satisfied: annotated-types>=0.6.0 in d:\telegram bot\ai-job-telegram-bot\venv\lib\site-packages (from pydantic<3.0,>=1.9->postgrest==2.32.0->supabase) (0.8.0)
+Requirement already satisfied: pydantic-core==2.46.5 in d:\telegram bot\ai-job-telegram-bot\venv\lib\site-packages (from pydantic<3.0,>=1.9->postgrest==2.32.0->supabase) (2.46.5)
+Requirement already satisfied: typing-inspection>=0.4.2 in d:\telegram bot\ai-job-telegram-bot\venv\lib\site-packages (from pydantic<3.0,>=1.9->postgrest==2.32.0->supabase) (0.4.4)
+Requirement already satisfied: cryptography>=3.4.0 in d:\telegram bot\ai-job-telegram-bot\venv\lib\site-packages (from pyjwt[crypto]>=2.12.0->supabase-auth==2.32.0->supabase) (50.0.1)
+Requirement already satisfied: cffi>=2.0.0 in d:\telegram bot\ai-job-telegram-bot\venv\lib\site-packages (from cryptography>=3.4.0->pyjwt[crypto]>=2.12.0->supabase-auth==2.32.0->supabase) (2.1.1)
+Collecting hyperframe<7,>=6.1 (from h2<5,>=3->httpx[http2]<0.29,>=0.26->postgrest==2.32.0->supabase)
+  Using cached hyperframe-6.1.0-py3-none-any.whl.metadata (4.3 kB)
+Collecting hpack<5,>=4.2 (from h2<5,>=3->httpx[http2]<0.29,>=0.26->postgrest==2.32.0->supabase)
+  Downloading hpack-4.2.0-py3-none-any.whl.metadata (3.3 kB)
+Requirement already satisfied: pycparser in d:\telegram bot\ai-job-telegram-bot\venv\lib\site-packages (from cffi>=2.0.0->cryptography>=3.4.0->pyjwt[crypto]>=2.12.0->supabase-auth==2.32.0->supabase) (3.0)
+Downloading supabase-2.32.0-py3-none-any.whl (16 kB)
+Downloading postgrest-2.32.0-py3-none-any.whl (23 kB)
+Downloading realtime-2.32.0-py3-none-any.whl (23 kB)
+Downloading storage3-2.32.0-py3-none-any.whl (28 kB)
+Downloading supabase_auth-2.32.0-py3-none-any.whl (48 kB)
+   ---------------------------------------- 48.5/48.5 kB 2.5 MB/s eta 0:00:00
+Downloading supabase_functions-2.32.0-py3-none-any.whl (9.2 kB)
+Downloading yarl-1.25.1-cp312-cp312-win_amd64.whl (102 kB)
+   ---------------------------------------- 102.6/102.6 kB 2.0 MB/s eta 0:00:00
+Using cached deprecation-2.1.0-py2.py3-none-any.whl (11 kB)
+Downloading multidict-7.0.0-cp312-cp312-win_amd64.whl (87 kB)
+   ---------------------------------------- 87.2/87.2 kB 2.5 MB/s eta 0:00:00
+Downloading propcache-0.5.4-cp312-cp312-win_amd64.whl (46 kB)
+   ---------------------------------------- 46.2/46.2 kB 1.1 MB/s eta 0:00:00
+Downloading pyjwt-2.15.1-py3-none-any.whl (33 kB)
+Using cached StrEnum-0.4.15-py3-none-any.whl (8.9 kB)
+Using cached websockets-15.0.1-cp312-cp312-win_amd64.whl (176 kB)
+Downloading h2-4.4.1-py3-none-any.whl (62 kB)
+   ---------------------------------------- 62.6/62.6 kB 3.3 MB/s eta 0:00:00
+Downloading packaging-26.3-py3-none-any.whl (129 kB)
+   ---------------------------------------- 130.0/130.0 kB 2.5 MB/s eta 0:00:00
+Downloading hpack-4.2.0-py3-none-any.whl (34 kB)
+Using cached hyperframe-6.1.0-py3-none-any.whl (13 kB)
+Installing collected packages: strenum, websockets, pyjwt, propcache, packaging, multidict, hyperframe, hpack, yarl, h2, deprecation, realtime, supabase-functions, supabase-auth, storage3, postgrest, supabase
+  Attempting uninstall: websockets
+    Found existing installation: websockets 16.1.1
+    Uninstalling websockets-16.1.1:
+      Successfully uninstalled websockets-16.1.1
+Successfully installed deprecation-2.1.0 h2-4.4.1 hpack-4.2.0 hyperframe-6.1.0 multidict-7.0.0 packaging-26.3 postgrest-2.32.0 propcache-0.5.4 pyjwt-2.15.1 realtime-2.32.0 storage3-2.32.0 strenum-0.4.15 supabase-2.32.0 supabase-auth-2.32.0 supabase-functions-2.32.0 websockets-15.0.1 yarl-1.25.1
