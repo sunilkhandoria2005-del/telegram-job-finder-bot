@@ -3,6 +3,10 @@
 An AI-powered job discovery and matching application built with Python.
 It collects job opportunities from multiple APIs and helps users find
 relevant positions based on their skills, experience, and preferences.
+## 📸 Project Screenshot
+
+![AI Job Finder Screenshot](screenshot/Screenshot%202026-10-11%20144843.png)
+
 
 ##  Features
 
